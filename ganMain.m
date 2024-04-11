@@ -42,7 +42,7 @@ netG = dlnetwork(layersGenerator);                                              
 
 %% Define Discriminator Network
 dropoutProb = 0.5;                                                            % Sets dropout probability to 50% to reduce overfitting.
-numFilters = 64;                                                              % Initial number of filters for the first convolutional layer.
+numFilters = 128;                                                              % Initial number of filters for the first convolutional layer.
 scale = 0.2;                                                                  % Slope for the negative part of the LeakyReLU activation function.
 inputSize = [256 256 1];                                                      % Specifies input image size as 256x256 pixels with 1 channel (grayscale).
 filterSize = 5;                                                               % Size of convolution filters is set to 5x5.
