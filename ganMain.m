@@ -5,7 +5,7 @@
 
 %% Load Training Data 
 imageFolder = fullfile('C:\...\RealImages');                                            % Read folder containing real images of interest.
-imds = imageDatastore(imageFolder,IncludeSubfolders=true);                              % Create an image datastore containing the photos of the flowers.
+imds = imageDatastore(imageFolder,IncludeSubfolders=true);                              % Create an image datastore containing the pictures of interest.
 augmenter = imageDataAugmenter(RandXReflection=true);                                   % Augment the data to include random horizontal flipping 
 augimds = augmentedImageDatastore([256 256],imds,DataAugmentation=augmenter);           %...and resize the images to have the desized size (e.g., 256 x 256).
 
