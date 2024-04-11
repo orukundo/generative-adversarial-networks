@@ -77,7 +77,7 @@ netD = dlnetwork(layersDiscriminator);                                        % 
 
 %% Specify Training Options
 numEpochs = 5000;                              % Number of full passes through the training dataset.
-miniBatchSize = 128;                           % Number of samples per mini-batch for gradient estimation.
+miniBatchSize = 2;                             % Number of samples per mini-batch for gradient estimation.
 learnRate = 0.0002;                            % Learning rate for the optimizer, controlling the step size during weight updates.
 gradientDecayFactor = 0.5;                     % Momentum factor, helping to accelerate gradients vectors in the right directions.
 squaredGradientDecayFactor = 0.999;            % Factor for the moving average of the squared gradient values, used in optimizers like Adam.
