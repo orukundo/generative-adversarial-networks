@@ -195,7 +195,7 @@ end
 
 XGeneratedNew = extractdata(XGeneratedNew);                % Extract and process generated images from the dlarray
 XGeneratedNew = rescale(XGeneratedNew);                    % Rescale images to the range [0, 1] for display or saving
-numImages = size(XGeneratedNew, numObservations);          % Generate new images using the predict function with the generator and the input data
+numImages = size(XGeneratedNew, 4);                        % Generate new images using the predict function with the generator and the input data
 
 for i = 1:numImages
     img = XGeneratedNew(:,:,:,i);                           % Select the i-th image
